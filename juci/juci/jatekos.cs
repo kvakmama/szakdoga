@@ -1,0 +1,50 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace juci
+{
+
+    public class Jatekos
+    {
+        private int id;
+        private static int szamlalo = 1;
+        public int x, y;
+        private string alapszin = "barna";
+        protected string szin;
+
+
+
+        public Jatekos()
+        {
+            id = szamlalo;
+            szamlalo++;  
+        }
+
+        public Jatekos(int z):this()
+        {
+            x = z * 2;
+            y = z * 2;
+            szin = alapszin;
+        }
+
+        public void kiir()
+        {
+            Console.WriteLine(x);
+        }
+
+        public void alapszine()
+        {
+            Console.WriteLine(alapszin);
+            Console.WriteLine(id);
+            Console.WriteLine(szin);
+        }
+
+        public int get_id()
+        {
+            return id;
+        }
+    }
+}
