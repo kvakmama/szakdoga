@@ -18,11 +18,10 @@ namespace juci
             Lany juci = new Lany(2);
             aron.kiir();
             juci.kiir();
-            aron.alapszine();
-            juci.alapszine();
             juci.lanytulajdonsag();
-
-
+            Console.WriteLine(juci.MiASzin);
+            juci.MiASzin = "rozsa";
+            Console.WriteLine(juci.MiASzin);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

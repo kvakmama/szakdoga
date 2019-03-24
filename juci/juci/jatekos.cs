@@ -15,8 +15,6 @@ namespace juci
         private string alapszin = "barna";
         protected string szin;
 
-
-
         public Jatekos()
         {
             id = szamlalo;
@@ -32,14 +30,7 @@ namespace juci
 
         public void kiir()
         {
-            Console.WriteLine(x);
-        }
-
-        public void alapszine()
-        {
-            Console.WriteLine(alapszin);
-            Console.WriteLine(id);
-            Console.WriteLine(szin);
+            Console.WriteLine("x:"+x+", y:"+y+", alapszin:"+alapszin+", id:"+id+", szin:"+szin);
         }
 
         public int get_id()

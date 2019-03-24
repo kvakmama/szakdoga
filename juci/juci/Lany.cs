@@ -8,6 +8,12 @@ namespace juci
 {
     public class Lany : Jatekos
     {
+        public string MiASzin
+        {
+            get { return szin;}
+            set { szin = value; }
+        }
+
         public Lany(int z):base(z)
         {
             szin = "piros";
@@ -15,9 +21,7 @@ namespace juci
         
         public void lanytulajdonsag()
         {
-            Console.WriteLine("szoknyas, tancol");
-            Console.WriteLine(get_id());
-            Console.WriteLine(szin);
+            Console.WriteLine("szoknyas, tancol, szine:"+szin+", lany id:"+(get_id()));
         }
     }
 }

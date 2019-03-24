@@ -7,3 +7,13 @@ D:\c#\juci\juci\bin\Debug\juci.exe
 D:\c#\juci\juci\bin\Debug\juci.pdb
 D:\c#\juci\juci\obj\Debug\juci.exe
 D:\c#\juci\juci\obj\Debug\juci.pdb
+D:\majd_torolheted\szakdoga\juci\juci\obj\Debug\juci.csprojAssemblyReference.cache
+D:\majd_torolheted\szakdoga\juci\juci\obj\Debug\juci.Form1.resources
+D:\majd_torolheted\szakdoga\juci\juci\obj\Debug\juci.Properties.Resources.resources
+D:\majd_torolheted\szakdoga\juci\juci\obj\Debug\juci.csproj.GenerateResource.cache
+D:\majd_torolheted\szakdoga\juci\juci\obj\Debug\juci.csproj.CoreCompileInputs.cache
+D:\majd_torolheted\szakdoga\juci\juci\obj\Debug\juci.exe
+D:\majd_torolheted\szakdoga\juci\juci\obj\Debug\juci.pdb
+D:\majd_torolheted\szakdoga\juci\juci\bin\Debug\juci.exe.config
+D:\majd_torolheted\szakdoga\juci\juci\bin\Debug\juci.exe
+D:\majd_torolheted\szakdoga\juci\juci\bin\Debug\juci.pdb
