@@ -24,6 +24,13 @@ namespace juci
             Console.WriteLine(juci.MiASzin);
             aron.Lojjel<Geppuska>();
 
+            int i = 10;
+            int j = 20;
+            Osszehasonlito<int> osszehasonlito = new Osszehasonlito<int>();
+            Console.WriteLine("Nagyobbe az elso szam: " + i + " a masodiknal: "+ j + osszehasonlito.NagyobbAzElsoMintAMasodik(i, j));
+            //Console.WriteLine("Nagyobbe2?" + NemOkos.Nagyobbe(30,10));
+            ISebezheto ujtank = new Tank();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
