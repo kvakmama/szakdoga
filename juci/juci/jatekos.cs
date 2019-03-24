@@ -15,6 +15,12 @@ namespace juci
         private string alapszin = "barna";
         protected string szin;
 
+        public void Lojjel<T>() where T:Fegyver,new()
+        {
+            T fegyver = new T();
+            fegyver.Lo();
+        }
+
         public Jatekos()
         {
             id = szamlalo;

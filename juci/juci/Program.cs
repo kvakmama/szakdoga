@@ -22,6 +22,7 @@ namespace juci
             Console.WriteLine(juci.MiASzin);
             juci.MiASzin = "rozsa";
             Console.WriteLine(juci.MiASzin);
+            aron.Lojjel<Geppuska>();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
