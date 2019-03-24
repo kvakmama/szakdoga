@@ -35,6 +35,9 @@ namespace juci
             Tank tankocska = new Tank();
             tankocska.Csinal();
 
+            aron.regiloves();
+            aron.ujloves();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

@@ -43,5 +43,16 @@ namespace juci
         {
             return id;
         }
+
+        [Obsolete("Ez mar nem jo, uj_loves method van helyette")]
+        public void regiloves()
+        {
+            Console.WriteLine("regi loves");
+        }
+
+        public void ujloves()
+        {
+            Console.WriteLine("mar lelollek, mert elfaradtam!");
+        }
     }
 }
