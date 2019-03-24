@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbsztractOs.cs" />
     <Compile Include="Fegyver.cs" />
     <Compile Include="Geppuska.cs" />
     <Compile Include="ISebezheto.cs" />

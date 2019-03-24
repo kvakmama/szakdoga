@@ -30,6 +30,10 @@ namespace juci
             Console.WriteLine("Nagyobbe az elso szam: " + i + " a masodiknal: "+ j + osszehasonlito.NagyobbAzElsoMintAMasodik(i, j));
             //Console.WriteLine("Nagyobbe2?" + NemOkos.Nagyobbe(30,10));
             ISebezheto ujtank = new Tank();
+            ujtank.Sebzodj(44);
+            //ujtank.Csinalj();
+            Tank tankocska = new Tank();
+            tankocska.Csinal();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
