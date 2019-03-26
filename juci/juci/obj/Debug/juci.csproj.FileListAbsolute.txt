@@ -17,3 +17,12 @@ D:\majd_torolheted\szakdoga\juci\juci\obj\Debug\juci.pdb
 D:\majd_torolheted\szakdoga\juci\juci\bin\Debug\juci.exe.config
 D:\majd_torolheted\szakdoga\juci\juci\bin\Debug\juci.exe
 D:\majd_torolheted\szakdoga\juci\juci\bin\Debug\juci.pdb
+D:\C#\szakdoga\juci\juci\bin\Debug\juci.exe.config
+D:\C#\szakdoga\juci\juci\obj\Debug\juci.exe
+D:\C#\szakdoga\juci\juci\obj\Debug\juci.pdb
+D:\C#\szakdoga\juci\juci\bin\Debug\juci.exe
+D:\C#\szakdoga\juci\juci\bin\Debug\juci.pdb
+D:\C#\szakdoga\juci\juci\obj\Debug\juci.csprojResolveAssemblyReference.cache
+D:\C#\szakdoga\juci\juci\obj\Debug\juci.Form1.resources
+D:\C#\szakdoga\juci\juci\obj\Debug\juci.Properties.Resources.resources
+D:\C#\szakdoga\juci\juci\obj\Debug\juci.csproj.GenerateResource.Cache

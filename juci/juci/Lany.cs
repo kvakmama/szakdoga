@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,9 @@ namespace juci
         {
             szin = "piros";
         }
-        
+
+        [Conditional("juci")]
+        //[Conditional("DEBUG")]
         public void lanytulajdonsag()
         {
             Console.WriteLine("szoknyas, tancol, szine:"+szin+", lany id:"+(get_id()));
