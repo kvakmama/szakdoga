@@ -1,4 +1,5 @@
-﻿#define juci 
+﻿//#define juci 
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,6 +39,30 @@ namespace juci
 
             aron.regiloves();
             aron.ujloves();
+                        
+            Type type = typeof(Lany);
+            foreach (Object attr in type.GetCustomAttributes(false))
+            {
+                Console.WriteLine(attr);
+            }
+
+            Type t = typeof(Jatekos);
+            System.Reflection.MemberInfo[] members = t.GetMembers();
+            // todo: kiirni az osszes membert, methodot, propertyt, ezek attributumait
+            Attribute[] attributes = System.Attribute.GetCustomAttributes(typeof(Jatekos).GetMethod("kiir"));
+            foreach (Attribute attr in attributes)
+            {
+                if (attr is Tulajdonos)
+                {
+                    Console.WriteLine("Tulajdonos:" + (attr as Tulajdonos).nev);
+                }
+                else if (attr is SzakertoAttribute)
+                {
+                    SzakertoAttribute sz = (attr as SzakertoAttribute);
+                    Console.WriteLine("Expert:" + sz.nev + " a dátum:" + sz.datum);
+                }
+            }
+
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

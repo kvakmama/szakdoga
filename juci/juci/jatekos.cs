@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace juci
 {
-
+    [System.Serializable, Tulajdonos("Judit"), Tulajdonos("Judit2"), SzakertoAttribute("Béla", datum = "2012")]
     public class Jatekos
     {
         private int id;
@@ -27,6 +27,7 @@ namespace juci
             szamlalo++;  
         }
 
+        //[Tulajdonos("Lusszmussz"), SzakertoAttribute("Béla", datum = "2012")]
         public Jatekos(int z):this()
         {
             x = z * 2;
@@ -34,6 +35,7 @@ namespace juci
             szin = alapszin;
         }
 
+        [Tulajdonos("Lusszmussz"), SzakertoAttribute("Béla", datum = "2012")]
         public void kiir()
         {
             Console.WriteLine("x:"+x+", y:"+y+", alapszin:"+alapszin+", id:"+id+", szin:"+szin);
@@ -49,7 +51,7 @@ namespace juci
         {
             Console.WriteLine("regi loves");
         }
-
+        [Tulajdonos("Judit"), SzakertoAttribute("Béla", datum = "2012")]
         public void ujloves()
         {
             Console.WriteLine("mar lelollek, mert elfaradtam!");

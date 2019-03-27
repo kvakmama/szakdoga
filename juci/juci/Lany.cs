@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace juci
 {
+    [System.Serializable, Tulajdonos("Judit"), SzakertoAttribute("Béla", datum = "2012")]
     public class Lany : Jatekos
     {
         public string MiASzin
@@ -20,7 +21,7 @@ namespace juci
             szin = "piros";
         }
 
-        [Conditional("juci")]
+        //[Conditional("juci")]
         //[Conditional("DEBUG")]
         public void lanytulajdonsag()
         {
