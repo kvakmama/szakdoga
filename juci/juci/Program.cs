@@ -86,7 +86,9 @@ namespace juci
             lusziharcicica.sebzodik(5);
             lusziharcicica.fuggveny += EnFuggvenyem2;
 
-
+            FuggvenyEgyStringParameterrel stringF;
+            stringF = (p) => Console.WriteLine("Stringes lambda:" + p);
+            stringF("4");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
@@ -100,6 +102,8 @@ namespace juci
         static void EnFuggvenyem2()
         {
             Console.WriteLine("EnFuggvenyem meghivva 2!");
+            
         }
+
     }
 }
