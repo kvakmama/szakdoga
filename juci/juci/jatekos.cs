@@ -14,6 +14,7 @@ namespace juci
         public int x, y;
         private string alapszin = "barna";
         protected string szin;
+        public DFuggveny fuggveny;
 
         public void Lojjel<T>() where T:Fegyver,new()
         {
@@ -34,6 +35,17 @@ namespace juci
             y = z * 2;
             szin = alapszin;
         }
+
+        public void sebzodik(int t)
+        {
+            if (fuggveny != null) fuggveny();
+            Console.WriteLine("Ennyit sebzodtem:" + t);
+        }
+        public virtual void ugrik()
+        {
+            Console.WriteLine("Ugrottam!");
+        }
+
 
         [Tulajdonos("Lusszmussz"), SzakertoAttribute("Béla", datum = "2012")]
         public void kiir()

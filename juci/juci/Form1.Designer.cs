@@ -92,7 +92,6 @@
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.Bkiir);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 

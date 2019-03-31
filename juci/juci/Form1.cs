@@ -19,7 +19,9 @@ namespace juci
 
         private void Buttonkiir_Click(object sender, EventArgs e)
         {
-
+            string x;
+            x = label1.Text;
+            label2.Text = x;
         }
     }
 }

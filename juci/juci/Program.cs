@@ -75,11 +75,31 @@ namespace juci
                 Attribute[] attributes = System.Attribute.GetCustomAttributes(member);
                 attributekiir(attributes);
             }
-            
+
+
+            //delegate
+            Jatekos lusziharcicica = new Jatekos(6);
+            //lusziharcicica.sebzodik(5);
+            lusziharcicica.ugrik();
+            lusziharcicica.fuggveny = EnFuggvenyem;
+            lusziharcicica.fuggveny += EnFuggvenyem2;
+            lusziharcicica.sebzodik(5);
+            lusziharcicica.fuggveny += EnFuggvenyem2;
+
+
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
+        }
+        static void EnFuggvenyem()
+        {
+            Console.WriteLine("Egy Kukac típus éppen lőtt egyet!");
+        }
+
+        static void EnFuggvenyem2()
+        {
+            Console.WriteLine("EnFuggvenyem meghivva 2!");
         }
     }
 }
