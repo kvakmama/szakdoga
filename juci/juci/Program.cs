@@ -10,6 +10,25 @@ namespace juci
 {
     static class Program
     {
+        static void attributekiir(Attribute[] attributes)
+        {
+            foreach (Attribute attr in attributes)
+            {
+                if (attr is Tulajdonos)
+                {
+                    Console.WriteLine("Tulajdonos:" + (attr as Tulajdonos).nev);
+                }
+                else if (attr is SzakertoAttribute)
+                {
+                    SzakertoAttribute sz = (attr as SzakertoAttribute);
+                    Console.WriteLine("Expert:" + sz.nev + " a dátum:" + sz.datum);
+                }
+                else
+                {
+                    Console.WriteLine(attr);
+                }
+            }
+        }
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -49,20 +68,14 @@ namespace juci
             Type t = typeof(Jatekos);
             System.Reflection.MemberInfo[] members = t.GetMembers();
             // todo: kiirni az osszes membert, methodot, propertyt, ezek attributumait
-            Attribute[] attributes = System.Attribute.GetCustomAttributes(typeof(Jatekos).GetMethod("kiir"));
-            foreach (Attribute attr in attributes)
+            Console.WriteLine("==========================================");
+            foreach (System.Reflection.MemberInfo member in members)
             {
-                if (attr is Tulajdonos)
-                {
-                    Console.WriteLine("Tulajdonos:" + (attr as Tulajdonos).nev);
-                }
-                else if (attr is SzakertoAttribute)
-                {
-                    SzakertoAttribute sz = (attr as SzakertoAttribute);
-                    Console.WriteLine("Expert:" + sz.nev + " a dátum:" + sz.datum);
-                }
+                Console.WriteLine(member);
+                Attribute[] attributes = System.Attribute.GetCustomAttributes(member);
+                attributekiir(attributes);
             }
-
+            
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

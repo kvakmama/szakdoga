@@ -16,5 +16,10 @@ namespace juci
         {
             InitializeComponent();
         }
+
+        private void Buttonkiir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
